@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Game Otome</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #96b9e0;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #347cc9;
+    }
+
+    h2 {
+      color: #3586cd;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    h2:hover {
+      color: #3688cb;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #3a88c7;
+      border-radius: 8px;
+      padding: 10px 0;
+      margin-bottom: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+
+    .game {
+      background-color: white;
+      border: 1px solid #74caff;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 8px;
+      transition: transform 0.2s, background-color 0.3s ease;
+    }
+
+    .game:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: #f2e7f2;
+    }
+
+    .info {
+      display: none;
+    }
+
+    .welcome-message {
+      font-family: 'Times New Roman', serif;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <h1>LunaDream</h1>
+  <p class="welcome-message">Tidak hanya menonton cerita, Anda kini bisa menjadi bagian dari kisahnya sendiri.</p>
+
+  <nav class="navbar">
+    <a href="#rumah">Rumah</a>
+    <a href="#games">Otome Game</a>
+    <a href="#about">Tentang Game</a>
+    <a href="#dukungan">Dukungan</a>
+  </nav>
+
+  <div class="section" id="rumah">
+    <h2>Selamat datang di LunaDream</h2>
+    <p>Di sinilah kisahmu dimulai perlahan, tenang, dan penuh warna rasa. Setiap pilihan yang kamu ambil bukan hanya
+      menentukan jalan cerita, tapi juga membentuk dunia yang kamu impikan. Temui tokoh-tokoh yang akan membuat hatimu
+      bergetar. Temukan cinta dalam keheningan, dalam tawa, dan dalam detik-detik yang tak terduga. Ini bukan sekadar
+      game, ini adalah mimpi yang bisa kamu jalani. Tulis kisahmu. Pilih hatimu. Dan biarkan cinta menemukan jalannya.
+    </p>
+  </div>
+
+  <div class="section" id="games">
+    <h2>Daftar Game Otome</h2>
+
+    <img src="Anormal State.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Abnormal State</strong><br>
+      <p class="info"><strong>Release Date:</strong> Aug 7, 2023</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> CARPE Corp.</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/watch?v=uABEzPqMG1A" target="_blank">
+          https://www.youtube.com/@GeniusOtomeStudio
+        </a>
+      </p>
+    </div>
+
+    <img src="Aqua Romance.jpg" width="300px" height="200px">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Aqua Romance</strong><br>
+      <p class="info"><strong>Release Date:</strong> October 4, 2023</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="Arcana T.jpg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Arcana Twilight</strong><br>
+      <p class="info"><strong>Release Date:</strong> August 24, 2022</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="Blood kiss.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Blood Kiss</strong><br>
+      <p class="info"><strong>Release Date:</strong> March 29, 2021</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Vampire</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="Casefile_Tokyo_Noir.webp" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Casefile: Tokyo Noir</strong><br>
+      <p class="info"><strong>Release Date:</strong> September 18, 2021</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> Genius.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@GeniusOtomeStudio" target="_blank">
+          https://www.youtube.com/@GeniusOtomeStudio
+        </a>
+      </p>
+    </div>
+
+    <img src="Change love show.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Change! Love Show</strong><br>
+      <p class="info"><strong>Release Date:</strong> September 9, 2024</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Idol</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="Charming T.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Charming Tails</strong><br>
+      <p class="info"><strong>Release Date:</strong> January 15, 2022</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Fantasy</p>
+      <p class="info"><strong>Developer:</strong> Genius.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@GeniusOtomeStudio" target="_blank">
+          https://www.youtube.com/@GeniusOtomeStudio
+        </a>
+      </p>
+    </div>
+
+    <img src="Code Romance.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Code Name: Romance</strong><br>
+      <p class="info"><strong>Release Date:</strong> 2022</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, RPG</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="Couple Breaker.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Couple Breaker</strong><br>
+      <p class="info"><strong>Release Date:</strong> May 19, 2025</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Betrayal, Ikemen drama</p>
+      <p class="info"><strong>Developer:</strong> Storytaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="Dark Romance.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Dark Romance: Ethereal Lovers</strong><br>
+      <p class="info"><strong>Release Date:</strong> Jan, 2025</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, vampire, undead, werewolf</p>
+      <p class="info"><strong>Developer:</strong> Storytaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/watch?v=iHcHIylAgl0" target="_blank">
+          https://www.youtube.com/watch?v=iHcHIylAgl0
+        </a>
+      </p>
+    </div>
+
+    <img src="Fallen Angel.webp" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Fallen Angel's Kiss</strong><br>
+      <p class="info"><strong>Release Date:</strong> October 10, 2024</p>
+      <p class="info"><strong>Platform:</strong> Android, iOS</p>
+      <p class="info"><strong>Genre:</strong> Romance, Devils, Angels</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@YuriKGame" target="_blank">
+          https://www.youtube.com/@YuriKGame
+        </a>
+      </p>
+    </div>
+
+    <img src="F1L.webp" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>First Lady Diaries</strong><br>
+      <p class="info"><strong>Release Date:</strong> January 29, 2019</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> Arithmetic Love Series</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/watch?v=fhVtb2LUV_w" target="_blank">
+          https://www.youtube.com/watch?v=fhVtb2LUV_w
+        </a>
+      </p>
+    </div>
+
+    <img src="Gentlemanproposal.jpg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Gentleman's Proposal</strong><br>
+      <p class="info"><strong>Release Date:</strong> November 25, 2024</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Fantasy, Dating Sim</p>
+      <p class="info"><strong>Developer:</strong> Storytaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://youtu.be/86Mo6kTGoaA?si=cb95FUCLn9GICXJZ" target="_blank">
+          https://youtu.be/86Mo6kTGoaA?si=cb95FUCLn9GICXJZ
+        </a>
+      </p>
+    </div>
+
+    <img src="Golden Deside.jpeg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Golden Desire</strong><br>
+      <p class="info"><strong>Release Date:</strong> Jan, 2025</p>
+      <p class="info"><strong>Platform:</strong> PC (Steam), Nintendo SWITCH</p>
+      <p class="info"><strong>Genre:</strong> Romance, Gods</p>
+      <p class="info"><strong>Developer:</strong> StoryTaco.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@storytaco" target="_blank">
+          https://www.youtube.com/@storytaco
+        </a>
+      </p>
+    </div>
+
+    <img src="HIM.webp" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Him, the Smile & bloom</strong><br>
+      <p class="info"><strong>Release Date:</strong> 27th February 2025</p>
+      <p class="info"><strong>Platform:</strong> PC (Steam), Nintendo SWITCH</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> EDIA.Inc</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@PQubeGames" target="_blank">
+          https://www.youtube.com/@PQubeGames
+        </a>
+      </p>
+    </div>
+
+    <img src="Infinite-Blue.jpg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Infinite Blue: Scavenger Hunt</strong><br>
+      <p class="info"><strong>Release Date:</strong> 2024</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Messenger</p>
+      <p class="info"><strong>Developer:</strong> Velvet Fox Games</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@velvetfoxgames" target="_blank">
+          https://www.youtube.com/@velvetfoxgames
+        </a>
+      </p>
+    </div>
+
+    <img src="Light and Night.png" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Light and Night</strong><br>
+      <p class="info"><strong>Release Date:</strong> June 24, 2021</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Fantasy, Role-playing Game </p>
+      <p class="info"><strong>Developer:</strong> Aurora Studio</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/watch?v=NnqpAinG40M" target="_blank">
+          https://www.youtube.com/watch?v=NnqpAinG40M
+        </a>
+      </p>
+    </div>
+
+    <img src="LND.jpg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Love and Deep Space</strong><br>
+
+      <p class="info"><strong>Release Date:</strong> Jan 18, 2024</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Otome, Action, Role-playing Game</p>
+      <p class="info"><strong>Developer:</strong> Infold Pte. Ltd.</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@LoveandDeepspace" target="_blank">
+          https://www.youtube.com/@LoveandDeepspace
+        </a>
+      </p>
+    </div>
+
+    <img src="Serendipy2.webp" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Serendipity; The Mafias</strong><br>
+      <p class="info"><strong>Release Date:</strong> April, 2023</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance</p>
+      <p class="info"><strong>Developer:</strong> Lumiere Entertainment Inc.</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/watch?v=fhVtb2LUV_w" target="_blank">
+          https://www.youtube.com/watch?v=fhVtb2LUV_w
+        </a>
+      </p>
+    </div>
+
+    <img src="Tears Of Themis.jpg" width="300px" height="200px.">
+
+    <div class="game" onclick="toggleInfo(this)">
+      <strong>Tears of Themis</strong><br>
+      <p class="info"><strong>Release Date:</strong> July 29, 2021</p>
+      <p class="info"><strong>Platform:</strong> Mobile (Android, iOS)</p>
+      <p class="info"><strong>Genre:</strong> Romance, Detective</p>
+      <p class="info"><strong>Developer:</strong> MiHoYo</p>
+
+      <p class="info youtube-link" style="margin-top: 10px;">
+        <strong>YouTube:</strong>
+        <a href="https://www.youtube.com/@Tearsofthemis_en" target="_blank">
+          https://www.youtube.com/@Tearsofthemis_en
+        </a>
+      </p>
+    </div>
+
+  </div>
+
+  <div class="section" id="about">
+    <h2>Tentang Otome Game</h2>
+    <p>Otome game adalah jenis permainan interaktif yang mengajak pemain, khususnya perempuan, untuk memasuki dunia
+      penuh kisah cinta, konflik, dan pilihan emosional. Dalam permainan ini, pemain berperan sebagai tokoh utama yang
+      dikelilingi oleh karakter-karakter menarik yang masing-masing memiliki kepribadian dan latar belakang unik.
+      Kisah yang ditawarkan tidak hanya menghibur, tetapi juga mampu menyentuh sisi emosional pemain, membuat mereka
+      tersenyum, terharu, bahkan merasa terikat secara emosional dengan alur cerita.</p>
+    <p>Salah satu daya tarik utama dari otome game adalah kesempatan untuk merasakan pengalaman cinta secara virtual.
+      Pemain dapat memilih tokoh favorit mereka dan membangun hubungan berdasarkan pilihan yang diambil dalam
+      permainan. Hal ini menciptakan pengalaman yang terasa personal dan menyenangkan. Tidak hanya itu, otome game
+      juga memberikan ruang imajinasi dan eskapisme, memungkinkan pemain untuk 'melarikan diri sejenak' dari dunia
+      nyata dan masuk ke dalam kisah romantis yang hangat dan penuh kejutan.</p>
+    <p>Melalui grafis yang menarik, musik latar yang mendukung suasana, serta dialog yang penuh makna, otome game
+      mampu menciptakan pengalaman yang mendalam dan berkesan. Maka dari itu, otome game bukan hanya sekadar hiburan,
+      tetapi juga media untuk mengeksplorasi perasaan, empati, dan kemampuan mengambil keputusan dalam cerita yang
+      dirancang dengan apik.</p>
+    <p><strong>Penutup (Opini Pribadi)</strong><br>Menurut saya, otome game adalah pilihan hiburan yang tidak hanya
+      menyenangkan tetapi juga mampu meningkatkan daya imajinasi dan kepekaan emosi. Bermain otome game membuat saya
+      merasa seperti menjadi bagian dari cerita, serta belajar memahami berbagai karakter dan situasi dari sudut
+      pandang yang berbeda. Selama dimainkan dengan bijak, otome game bisa menjadi media positif untuk mengisi waktu
+      luang dan melatih kemampuan berpikir serta berempati.</p>
+  </div>
+
+  <div class="section" id="dukungan">
+    <h2>Dukungan</h2>
+    <h4>Dukung Instagram dan Email Penulis</h4>
+    <p><a href="mailto:zaychaa73@gmail.com">Email: chaa123go@gmail.com</a></p>
+    <p><a href="https://instagram.com/chaa123go">Instagram: chaa123go</a></p>
+    <p><a href="https://instagram.com/otomeku.id">@otomeku.id</a></p>
+  </div>
+
+  <footer style="background-color: #3a88c7; color: white; text-align: center; padding: 20px; margin-top: 40px; border-radius: 8px; font-size: 0.9em;">
+    &copy; 2025 LunaDream
+  </footer>
+
+  <script>
+    function toggleInfo(gameDiv) {
+      const infoElements = gameDiv.getElementsByClassName('info');
+      for (let i = 0; i < infoElements.length; i++) {
+        infoElements[i].style.display =
+          infoElements[i].style.display === 'none' ? 'block' : 'none';
+      }
+    }
+  </script>
+
+</body>
+
+</html>
